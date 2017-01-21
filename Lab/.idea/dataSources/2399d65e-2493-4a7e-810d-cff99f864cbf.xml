@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - student@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="student">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="database"/>
+    <schema id="3" name="ghfy"/>
+    <schema id="4" name="homework3_12306"/>
+    <schema id="5" name="information_schema"/>
+    <schema id="6" name="knowledgeSQL"/>
+    <schema id="7" name="mysql"/>
+    <schema id="8" name="performance_schema"/>
+    <schema id="9" name="routesSys"/>
+    <schema id="10" name="sys"/>
+    <schema id="11" name="task2"/>
+    <table id="12" parent="1" name="user"/>
+    <table id="13" parent="1" name="course"/>
+    <table id="14" parent="1" name="select"/>
+    <column id="15" parent="12" name="userId">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="16" parent="12" name="username">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="17" parent="12" name="password">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <key id="18" parent="12" name="PRIMARY">
+      <columns>userId</columns>
+      <primary>1</primary>
+    </key>
+    <column id="19" parent="13" name="cid">
+      <mandatory>1</mandatory>
+      <data-type>varchar(55)|0</data-type>
+    </column>
+    <column id="20" parent="13" name="year">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="21" parent="13" name="coursename">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="22" parent="13" name="coursecredit">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <key id="23" parent="13" name="PRIMARY">
+      <columns>cid</columns>
+      <primary>1</primary>
+    </key>
+    <column id="24" parent="14" name="sid">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="25" parent="14" name="cid">
+      <data-type>varchar(55)|0</data-type>
+    </column>
+    <column id="26" parent="14" name="userId">
+      <data-type>varchar(55)|0</data-type>
+    </column>
+    <column id="27" parent="14" name="grade">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="28" parent="14" name="PRIMARY">
+      <columns>sid</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
