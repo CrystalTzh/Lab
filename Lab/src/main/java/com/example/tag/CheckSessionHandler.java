@@ -15,7 +15,8 @@ public class CheckSessionHandler extends TagSupport {
     public int doStartTag() throws JspException {
         int result=0;
         HttpSession session=pageContext.getSession();
-        String loginInfo=(String)session.getAttribute("username");
+        String loginInfo=(String)session.getAttribute("user");
+//        System.out.println(loginInfo);
         if(loginInfo==null){
             result=SKIP_BODY;
             try {
